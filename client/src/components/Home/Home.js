@@ -358,7 +358,7 @@ class ResponsiveDrawer extends React.Component {
     </div>
     <div class='col-md'>
       <Card className={classes.card}>
-      <CardImg className={classes.cardImg} src='./images/banknew.png' alt="piggY" />
+      <CardImg className={classes.cardImg} src='./images/bank2.png' alt="piggY" />
       <CardContent>
       <h4><b>Piggy Bank</b></h4>
         <p class='text4 textResponsive'>Mobile-Focused web application where you can track and save your spendings.</p>
@@ -407,7 +407,7 @@ class ResponsiveDrawer extends React.Component {
             </div>
             <div class='col'>
               <figure>
-              <img src='./images/jsxlogo.png' alt='JSX' class='pic iconSize' />
+              <img src='./images/reactlogo2.png' alt='JSX' class='pic iconSize' />
               <figcaption class='iconTextSize'>JSX</figcaption>
               </figure>
             </div>
@@ -460,7 +460,7 @@ class ResponsiveDrawer extends React.Component {
                 <div class='row text-center'>
                 <div class='col'>
                 <figure>
-                <img src='./images/jsx.svg' alt='React' class='pic iconSize' />
+                <img src='./images/reactlogo2.png' alt='React' class='pic iconSize' />
                 <figcaption class='iconTextSize'>React</figcaption>
                 </figure>
                 </div>
