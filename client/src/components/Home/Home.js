@@ -24,8 +24,7 @@ import TrendingUp from '@material-ui/icons/TrendingUp';
 import Assessment from '@material-ui/icons/Assessment';
 import School from '@material-ui/icons/School';
 import Description from '@material-ui/icons/Description';
-import { Card, CardImg, CardText,
-  CardTitle,} from 'reactstrap';
+import { Card, CardImg,} from 'reactstrap';
   import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import classnames from 'classnames';
@@ -280,14 +279,14 @@ class ResponsiveDrawer extends React.Component {
             <br></br>
 
             
-            <div class="container" justify-content='center'>
-            <div class='row'>
-            <div class='col-12'>
+            <div class="container">
+            <div class='rows'>
+            <Grid container justify="center" alignItems="center">
           <Card className={classes.card}>
-        <img src='./images/uci3.jpg' alt='UCI' class='extraPadding' />
+        <img src='./images/uci3.jpg' alt='UCI' class='extraPadding uciImg' />
         <hr></hr>
         <CardActions className={classes.actions} disableActionSpacing>
-        <Typography variant='h6'>University of California, Irvine</Typography>
+        <p class='text'>University of California, Irvine</p>
         <br></br>
         {/* <Typography variant='p' >July 26th, 2018 - January 26th, 2019</Typography> */}
           <IconButton
@@ -303,31 +302,27 @@ class ResponsiveDrawer extends React.Component {
         </CardActions>
         <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
           <CardContent>
-            <Typography  class='text textResponsive'><b>Coding Boot Camp:</b></Typography>
-
-            <Typography paragraph>
+            <p  class='text4 textResponsive'><b>Coding Boot Camp:</b></p>
+            <p class='text4 textResponsive'>
               An intensive 24 week program where you learn the fundamentals of full-stack development.
-            </Typography>
-            <Typography paragraph>
+            </p>
+            <p class='text4 textResponsive'>
             The Coding Boot Camp was designed to help students develop the skills and professional network needed to capitalize on the high demand web development career track.
-            </Typography>
-            <Typography paragraph>
+            </p>
+            <p class='text4 textResponsive'>
             Gain practical web development experience and build a professional portfolio through a strategically engineered curriculum, centered around real-world projects.
-            </Typography>
-            <Typography paragraph>
+            </p>
+            <p class='text4 textResponsive'>
             You will learn marketable skills such as HTML5, CSS3, JavaScript, jQuery, C#, ASP.Net, Bootstrap, React.js, Node.js, MongoDB, MySQL, and more.
-            </Typography>
-            <Typography paragraph>
+            </p>
+            <p class='text4 textResponsive'>
             Benefit from dynamic, real-time classes taught by skilled instructors who know what it takes to succeed in the industry and
             become employer competitive through various career services like technical interview training, portfolio reviews, resume support, 1:1 career coaching, and more.
-            </Typography>
-            <Typography>
-              Set aside off of the heat to let rest for 10 minutes, and then serve.
-            </Typography>
+            </p>
           </CardContent>
         </Collapse>
       </Card>
-      </div>
+      </Grid>
       </div>
       </div>
       
@@ -350,8 +345,8 @@ class ResponsiveDrawer extends React.Component {
     <Card className={classes.card}>
     <CardImg className={classes.cardImg} src="./images/pokemonNewSize.png" alt="clickyGame" />
       <CardContent>
-      <CardTitle>Clicky Game</CardTitle>
-      <CardText>A game where you click as many different images as possible until you click the same Pokemon twice.</CardText>
+      <h4><b>Clicky Game</b></h4>
+      <p class='text4 textResponsive'>A game where you click different images until you click the same Pokemon twice.</p>
       </CardContent>
       <CardActions>
       <Grid container justify="center" alignItems="center">
@@ -365,8 +360,8 @@ class ResponsiveDrawer extends React.Component {
       <Card className={classes.card}>
       <CardImg className={classes.cardImg} src='./images/banknew.png' alt="piggY" />
       <CardContent>
-      <CardTitle>Piggy Bank</CardTitle>
-        <CardText>Mobile-Focused web application where you can track and save your spendings.</CardText>
+      <h4><b>Piggy Bank</b></h4>
+        <p class='text4 textResponsive'>Mobile-Focused web application where you can track and save your spendings.</p>
       </CardContent>
       <CardActions>
       <Grid container justify="center" alignItems="center">
@@ -399,20 +394,20 @@ class ResponsiveDrawer extends React.Component {
 
             <Paper>
             <div class='container-fluid text-align'>
-                <h1 class='text skillsHeader'>HTML</h1>
+                <h1 class='text skillsHeader'><b>HTML</b></h1>
             </div>
             <hr></hr>
             <div class='container'>
             <div class='row text-center'>
             <div class='col'>
               <figure>
-              <img src='./images/html5.png' alt='HTML5' class='pic iconSize' />
+              <img src='./images/html5logo6.jpg' alt='HTML5' class='pic iconSize' />
               <figcaption class='iconTextSize'>HTML 5</figcaption>
               </figure>
             </div>
             <div class='col'>
               <figure>
-              <img src='./images/jsx.svg' alt='JSX' class='pic iconSize' />
+              <img src='./images/jsxlogo.png' alt='JSX' class='pic iconSize' />
               <figcaption class='iconTextSize'>JSX</figcaption>
               </figure>
             </div>
@@ -422,7 +417,7 @@ class ResponsiveDrawer extends React.Component {
             <br></br>
             <Paper> 
             <div class='container-fluid text-align'>
-                <h1 class='text skillsHeader'>CSS</h1>
+                <h1 class='text skillsHeader'><b>CSS</b></h1>
             </div>
                 <hr></hr>
                 <div class='container'>
@@ -435,7 +430,7 @@ class ResponsiveDrawer extends React.Component {
                 </div>
                 <div class='col'>
                   <figure>
-                  <img src='./images/materialui2.png' alt='Material' class='pic iconSize' />
+                  <img src='./images/matlogo2.png' alt='Material' class='pic iconSize' />
                   <figcaption class='iconTextSize'>Material UI</figcaption>
                   </figure>
                 </div>
@@ -458,7 +453,7 @@ class ResponsiveDrawer extends React.Component {
             <br></br>
             <Paper>    
                 <Grid container justify="center" alignItems="center">
-                <h1 class='text skillsHeader'>Javascript</h1>
+                <h1 class='text skillsHeader'><b>Javascript</b></h1>
                 </Grid>
                 <hr></hr>
                 <div class='container'>
@@ -471,7 +466,7 @@ class ResponsiveDrawer extends React.Component {
                 </div>
                 <div class='col'>
                 <figure>
-                <img src='./images/javascript2.png' alt='Javascript' class='pic iconSize' />
+                <img src='./images/javalogo2.png' alt='Javascript' class='pic iconSize' />
                 <figcaption class='iconTextSize'>Javascript</figcaption>
                 </figure>
                 </div>
@@ -494,7 +489,7 @@ class ResponsiveDrawer extends React.Component {
             <br></br>
             <Paper>    
                 <Grid container justify="center" alignItems="center">
-                <h1 class='text skillsHeader'>Back-End</h1>
+                <h1 class='text skillsHeader'><b>Back-End</b></h1>
                 </Grid>
                 <hr></hr>
                 <div class='container'>
@@ -518,7 +513,7 @@ class ResponsiveDrawer extends React.Component {
 
             <Paper>    
                 <Grid container justify="center" alignItems="center">
-                <h1 class='text skillsHeader'>Other</h1>
+                <h1 class='text skillsHeader'><b>Other</b></h1>
                 </Grid>
                 <hr></hr>
                 <div class='container'>
@@ -561,9 +556,9 @@ class ResponsiveDrawer extends React.Component {
                 <div class='col-sm-8'>
                 <p class='link headerResponsive'>
                 <a href='https://uci.edu/' class='headerColor'> University of California,<br></br> Irvine</a>
-                </p>
+                </p> 
                 <hr></hr>
-                <p>
+                <p class='text textResponsive'>
                     July 26th, 2018 - January 26th, 2019
                 <ul>
                     <li>Certification</li>
@@ -587,7 +582,7 @@ class ResponsiveDrawer extends React.Component {
                 <a href='https://www.mi.edu/' class='headerColor'> Musician's Institute,<br></br> Hollywood CA</a>
                 </p>
                 <hr></hr>
-                <p>
+                <p class='text textResponsive'>
                     October 1st, 2010 - Febuary 20th, 2012
                 <ul>
                     <li>Associates of Arts degree</li>
