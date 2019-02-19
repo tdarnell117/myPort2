@@ -363,7 +363,7 @@ class ResponsiveDrawer extends React.Component {
     </div>
     <div class='col-md'>
       <Card className={classes.card}>
-      <CardImg className={classes.cardImg} src='./images/bankNew.png' alt="piggY" />
+      <CardImg className={classes.cardImg} src='./images/banknew.png' alt="piggY" />
       <CardContent>
       <CardTitle>Piggy Bank</CardTitle>
         <CardText>Mobile-Focused web application where you can track and save your spendings.</CardText>
