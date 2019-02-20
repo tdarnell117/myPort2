@@ -185,6 +185,14 @@ div.item {
 }
 
 @media only screen and (max-width: 600px) {
+  .textResponsive2 {
+    font-size: 20px;
+    font-family: oblique;
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 600px) {
   .headerResponsive {
     font-size: 20px;
     font-family: oblique;

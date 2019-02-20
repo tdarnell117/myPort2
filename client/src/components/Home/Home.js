@@ -604,7 +604,7 @@ class ResponsiveDrawer extends React.Component {
                       <a href='https://uci.edu/' class='headerColor'> University of California,<br></br> Irvine</a>
                     </p>
                     <hr></hr>
-                    <p class='text textResponsive'>
+                    <p class='text textResponsive2'>
                       July 26th, 2018 - January 26th, 2019
                 <ul>
                         <li>Certification</li>
@@ -646,7 +646,7 @@ class ResponsiveDrawer extends React.Component {
                       <a href='https://www.mi.edu/' class='headerColor'> Musician's Institute,<br></br> Hollywood CA</a>
                     </p>
                     <hr></hr>
-                    <p class='text textResponsive'>
+                    <p class='text textResponsive2'>
                       October 1st, 2010 - Febuary 20th, 2012
                 <ul>
                         <li>Associates of Arts degree</li>
