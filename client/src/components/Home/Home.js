@@ -10,6 +10,7 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
+import Grade from '@material-ui/icons/Grade';
 import MailIcon from '@material-ui/icons/Mail';
 import MenuIcon from '@material-ui/icons/Menu';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -20,16 +21,16 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import Paper from '@material-ui/core/Paper';
 import red from '@material-ui/core/colors/red';
 import Work from '@material-ui/icons/Work';
-import TrendingUp from '@material-ui/icons/TrendingUp';
 import Assessment from '@material-ui/icons/Assessment';
 import School from '@material-ui/icons/School';
 import Description from '@material-ui/icons/Description';
 import { Card, CardImg,} from 'reactstrap';
-  import CardActions from '@material-ui/core/CardActions';
+import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import classnames from 'classnames';
-import Collapse from '@material-ui/core/Collapse';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import ExpansionPanel from '@material-ui/core/ExpansionPanel';
+import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
+import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 // import { HashLink as Link } from 'react-router-hash-link';
 
 
@@ -77,7 +78,11 @@ const styles = theme => ({
       paddingBottom: 50
   },
   card: {
-    maxWidth: 400,
+    Width: "auto",
+  },
+
+  projectCards: {
+    width: 350,
   },
  
   actions: {
@@ -156,14 +161,14 @@ class ResponsiveDrawer extends React.Component {
         </Grid>
         <Divider />
         <List className={classes.extraPadding}>
-          {[ <Button href='Home#Experience' class='text4'>Experience</Button>,
+          {[ <Button href='Home#About' class='text4'>About</Button>,
           <Button href='Home#Projects' class='text4'>Projects</Button>, <Button href='Home#Skills' class='text4'>Skills</Button>,
-          <Button href='Home#Education' class='text4'>Education</Button>, <Button href='Home#About' class='text4'>About</Button>,
+          <Button href='Home#Awards' class='text4'>Awards</Button>, <Button href='Home#Education' class='text4'>Education</Button>,
            <Button href='Home#Contact' class='text4'>Contact</Button>,
             <Button href='https://docs.google.com/document/d/1ptx704h2wUrqgO6IFiFY65UGFVJtgcYHkvwbaN-uPhY/edit?usp=sharing' class='text4' >Resume</Button>].map((text, index) => (
             <ListItem button key={text}>
-              <ListItemIcon>{index  === 0 ? <TrendingUp nativeColor='#00bcd4' /> : index === 1 ? <Work nativeColor='#3f51b5' /> :
-              index === 2 ? <Assessment nativeColor='#673ab7' /> : index === 3 ? <School nativeColor='#ff5722' /> : index === 4 ? <AccountCircle nativeColor='#009688' /> : index ===5 ? <MailIcon nativeColor='#5d4037' /> :
+              <ListItemIcon>{index  === 0 ? <AccountCircle nativeColor='#009688' /> : index === 1 ? <Work nativeColor='#3f51b5' /> :
+              index === 2 ? <Assessment nativeColor='#673ab7' /> : index === 3 ? <Grade nativeColor='#ff5722' /> : index === 4 ? <School nativeColor='#FFAB40' /> : index ===5 ? <MailIcon nativeColor='#5d4037' /> :
               index === 6 ? <Description nativeColor='#424242' /> : <MailIcon />}</ListItemIcon>
               <ListItemText primary={text} />
             </ListItem> 
@@ -237,9 +242,20 @@ class ResponsiveDrawer extends React.Component {
             </div>
             </Paper>
                 <br></br>
+
+                <Paper>
+                <div class="container-fluid header" >
+                <Grid container justify="center" alignItems="center">
+                <Typography variant='h3' class='headerText headerSections' id='About'>About</Typography>
+                </Grid>
+                </div>
+            </Paper>
+            <br></br>
+            <div class="container">
             <Paper>
-                <div class="container cardPadding">
+                <div class="container">
                 <div class='row'>
+                <div class='col cardPadding'>
                 <p class='text textResponsive'>
                 <b> Mission-driven full stack developer with a passion for thoughtful UI design,
                 collaboration, and learning. </b>
@@ -264,12 +280,14 @@ class ResponsiveDrawer extends React.Component {
                 </Grid>
                 </div>
                 </div>
+                </div>
                 </Paper>
+                </div>
             
 
               <br></br>
               
-            <Paper>
+            {/* <Paper>
             <div class="container-fluid header">
                 <Grid container justify="center" alignItems="center">
                 <Typography variant='h3' class='headerText headerSections' id='Experience'>Experience</Typography>
@@ -278,18 +296,15 @@ class ResponsiveDrawer extends React.Component {
             </Paper>
             <br></br>
 
-            
-            <div class="container">
-            <div class='rows'>
             <Grid container justify="center" alignItems="center">
           <Card className={classes.card}>
         <img src='./images/uci3.jpg' alt='UCI' class='extraPadding uciImg' />
         <hr></hr>
         <CardActions className={classes.actions} disableActionSpacing>
-        <p class='text'>University of California, Irvine</p>
-        <br></br>
+        <p class='text2'><b>University of California, Irvine</b></p>
+        <br></br> */}
         {/* <Typography variant='p' >July 26th, 2018 - January 26th, 2019</Typography> */}
-          <IconButton
+          {/* <IconButton
             className={classnames(classes.expand, {
               [classes.expandOpen]: this.state.expanded,
             })}
@@ -323,11 +338,7 @@ class ResponsiveDrawer extends React.Component {
         </Collapse>
       </Card>
       </Grid>
-      </div>
-      </div>
-      
-        <br></br>
-
+       */}
             <Paper>
             <div class="container-fluid header">
                 <Grid container justify="center" alignItems="center">
@@ -338,7 +349,7 @@ class ResponsiveDrawer extends React.Component {
         <br></br>
 
          
-    <div class='container-fluid'>
+    <div class='container'>
     <Grid container justify="center" alignItems="center"> 
     <div class='row text-center'>
     <div class='col-md cardPhone'>
@@ -374,13 +385,7 @@ class ResponsiveDrawer extends React.Component {
     </div>
     </Grid>
     </div>
-    
-    
-    
-  
- 
-  
-    
+       
             <br></br>
             <Paper>
             <div class="container-fluid header">
@@ -391,7 +396,7 @@ class ResponsiveDrawer extends React.Component {
             </Paper>
             <br></br>
 
-
+            <div class="container">
             <Paper>
             <div class='container-fluid text-align'>
                 <h1 class='text skillsHeader'><b>HTML</b></h1>
@@ -402,7 +407,7 @@ class ResponsiveDrawer extends React.Component {
             <div class='col'>
               <figure>
               <img src='./images/html5logo6.jpg' alt='HTML5' class='pic iconSize' />
-              <figcaption class='iconTextSize'>HTML 5</figcaption>
+              <figcaption class='text3 iconTextSize'>HTML 5</figcaption>
               </figure>
             </div>
             <div class='col'>
@@ -414,7 +419,9 @@ class ResponsiveDrawer extends React.Component {
             </div>
             </div>
             </Paper>
+            </div>
             <br></br>
+            <div class="container">
             <Paper> 
             <div class='container-fluid text-align'>
                 <h1 class='text skillsHeader'><b>CSS</b></h1>
@@ -434,7 +441,7 @@ class ResponsiveDrawer extends React.Component {
                   <figcaption class='iconTextSize'>Material UI</figcaption>
                   </figure>
                 </div>
-                <div class="w-100"></div>
+                {/* <div class="w-100"></div> */}
                 <div class='col'>
                   <figure>
                   <img src='./images/bootstrap4.jpg' alt='Bootstrap' class='pic iconSize' />
@@ -443,14 +450,16 @@ class ResponsiveDrawer extends React.Component {
                 </div>
                 <div class='col'>
                   <figure>
-                  <img src='./images/materialize4.png' alt='Materialize' class='pic iconSize' />
-                  <figcaption class='iconTextSize'>Materialize</figcaption>
+                  <img src='./images/materialDesignlogo.jpg' alt='Material Design' class='pic iconSize' />
+                  <figcaption class='iconTextSize'>Material Design</figcaption>
                   </figure>
                 </div>
                 </div>
                 </div>
             </Paper>
+            </div>
             <br></br>
+            <div class="container">
             <Paper>    
                 <Grid container justify="center" alignItems="center">
                 <h1 class='text skillsHeader'><b>Javascript</b></h1>
@@ -470,7 +479,7 @@ class ResponsiveDrawer extends React.Component {
                 <figcaption class='iconTextSize'>Javascript</figcaption>
                 </figure>
                 </div>
-                <div class="w-100"></div>
+                {/* <div class="w-100"></div> */}
                 <div class='col'>
                 <figure>
                 <img src='./images/jquery2.jpg' alt='Jquery' class='pic iconSize' />
@@ -486,7 +495,9 @@ class ResponsiveDrawer extends React.Component {
                 </div>
                 </div>
             </Paper>
+            </div>
             <br></br>
+            <div class="container">
             <Paper>    
                 <Grid container justify="center" alignItems="center">
                 <h1 class='text skillsHeader'><b>Back-End</b></h1>
@@ -509,8 +520,9 @@ class ResponsiveDrawer extends React.Component {
                 </div>
                 </div>
             </Paper>
+            </div>
             <br></br>
-
+            <div class="container">
             <Paper>    
                 <Grid container justify="center" alignItems="center">
                 <h1 class='text skillsHeader'><b>Other</b></h1>
@@ -534,10 +546,43 @@ class ResponsiveDrawer extends React.Component {
                 </div>
                
             </Paper>
+            </div>
+            <br></br>
+            <Paper>
+            <div class="container-fluid header">
+                <Grid container justify="center" alignItems="center">
+                <Typography variant='h3' class='headerText headerSections' id='Awards'>Awards</Typography>
+                </Grid>
+                </div>
+            </Paper>
+            <br></br>
+            <div class="container">
+            <Paper>
+                <div class="container-fluid">
+                <div class='row text-center'>
+                <div class='col-sm'>
+                <img src='./images/badge1.png' alt='badge1' class='awards awardsMoblie'></img>
+                </div>
+                <div class='col-sm'>
+                <img src='./images/badge2.png' alt='badge2' class='awards awardsMoblie'></img>
+                </div>
+                <div class='col-sm'>
+                <img src='./images/badge3.png' alt='badge3' class='awards awardsMoblie'></img>
+                </div>
+                <div class='col-sm'>
+                <img src='./images/badge4.png' alt='badge4' class='awards awardsMoblie'></img>
+                </div>
+                <div class='col-sm'>
+                <img src='./images/badge5.png' alt='badge5' class='awards awardsMoblie'></img>
+                </div>
+                </div>
+                </div>
+             
+            </Paper>
+            </div>
+
             <br></br>
 
-
-            
             <Paper>
             <div class="container-fluid header">
                 <Grid container justify="center" alignItems="center">
@@ -547,11 +592,12 @@ class ResponsiveDrawer extends React.Component {
             </Paper>
             <br></br>
 
+            <div class="container">
             <Paper>
-                <div class="container-fluid cardPadding">
-                <div class='row'>
-                <div class='col-sm-4'>
-                <img src='./images/uci3.jpg' alt='UCI' class='educationImg educationResponsive'></img>
+                <div class="container cardPadding">
+                <div class='row'>             
+                <div class='col-sm-4'>               
+                <img src='./images/uci3.jpg' alt='UCI' class='educationImg2 educationResponsive'></img>               
                 </div>
                 <div class='col-sm-8'>
                 <p class='link headerResponsive'>
@@ -567,12 +613,30 @@ class ResponsiveDrawer extends React.Component {
                 </div>
                 </div>
                 </div>
+                <ExpansionPanel>
+        <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
+          <Typography className={classes.heading}><b>Coding Boot Camp:</b></Typography>
+        </ExpansionPanelSummary>
+        <ExpansionPanelDetails>
+        <p  class='text4 textResponsive'></p>
+            <p class='text4 textResponsive'>
+              An intensive 24 week program where you learn the fundamentals of full-stack development.
+              The Coding Boot Camp was designed to help students develop the skills and professional network needed to capitalize on the high demand web development career track.
+              {/* Gain practical web development experience and build a professional portfolio through a strategically engineered curriculum, centered around real-world projects. */}
+            {/* You will learn marketable skills such as HTML5, CSS3, JavaScript, jQuery, C#, ASP.Net, Bootstrap, React.js, Node.js, MongoDB, MySQL, and more.
+            Benefit from dynamic, real-time classes taught by skilled instructors who know what it takes to succeed in the industry and
+            become employer competitive through various career services like technical interview training, portfolio reviews, resume support, 1:1 career coaching, and more. */}
+            </p>
+        </ExpansionPanelDetails>
+      </ExpansionPanel>
             </Paper>
+            </div>
+            
             
             <br></br>
-
+            <div class="container">
             <Paper>
-                <div class="container-fluid cardPadding">
+                <div class="container cardPadding">
                 <div class='row'>
                 <div class='col-sm-4'>
                 <img src='./images/miLogo.gif' alt='MI' class='educationImg educationResponsive'></img>
@@ -593,47 +657,9 @@ class ResponsiveDrawer extends React.Component {
                 </div>
                 </div>
             </Paper>
+            </div>
             
             <br></br>
-
-            <Paper>
-                <div class="container-fluid header" >
-                <Grid container justify="center" alignItems="center">
-                <Typography variant='h3' class='headerText headerSections' id='About'>About</Typography>
-                </Grid>
-                </div>
-            </Paper>
-            <br></br>
-
-            <Paper>
-                <div class='container-fluid'>
-                    <div class='row1'>
-                    <div class='col aboutPic'>
-                      <img src='./images/taylorTravel1.jpg' alt='taylor' class='aboutMeImg' />
-                      <img src='./images/taylorTravel2.jpg' alt='taylor' class='aboutMeImg' />
-                      <img src='./images/taylorTravel3.jpg' alt='taylor' class='aboutMeImg' />
-                      <img src='./images/taylorTravel4.jpg' alt='taylor' class='aboutMeImg' />
-                    </div>
-                    <div class='col aboutPic'>
-                    <img src='./images/taylorTravel5.jpg' alt='taylor' class='aboutMeImg' />
-                    <img src='./images/taylorTravel6.jpg' alt='taylor' class='aboutMeImg' />
-                    <img src='./images/taylorTravel11.jpg' alt='taylor' class='aboutMeImg' />
-                    <img src='./images/taylorTravel12.jpg' alt='taylor' class='aboutMeImg' />
-                    </div>
-                    <div class='col aboutPic'>
-                      <img src='./images/taylorTravel7.jpg' alt='taylor' class='aboutMeImg' />
-                      <img src='./images/taylorTravel8.jpg' alt='taylor' class='aboutMeImg' />
-                      <img src='./images/taylorTravel15.jpg' alt='taylor' class='aboutMeImg' />
-                      <img src='./images/taylorTravel10.jpg' alt='taylor' class='aboutMeImg' />  
-                    </div>
-                    </div>
-                    <hr></hr>
-                    <div class='row'>
-                      <p>this is stuff about me</p>
-                    </div>
-                </div>
-              </Paper>
-              <br></br>
             
             <Paper>
             <div class="container-fluid header">
@@ -643,6 +669,7 @@ class ResponsiveDrawer extends React.Component {
                 </div>
             </Paper>
                 <br></br>
+                <div class="container">
                 <Paper>
                 <div class="container-fluid cardPadding">
                 <Grid container justify="center" alignItems="center">
@@ -656,17 +683,18 @@ class ResponsiveDrawer extends React.Component {
                 <img src='./images/github3.png' alt='Github' class='pic contactImg' />
                 </Grid>
                 <Grid container justify="center" alignItems="center">
-                <a href='github.com/tdarnell117 ' class='link2 headerColor textResponsive'>github.com/tdarnell117 </a>
+                <a href='https://github.com/tdarnell117' class='link2 headerColor textResponsive'>github.com/tdarnell117 </a>
                 </Grid>
                 <br></br>
                 <Grid container justify="center" alignItems="center">
                 <img src='./images/linkedin2.png' alt='Linkedin' class='pic contactImg' />
                 </Grid>
                 <Grid container justify="center" alignItems="center">
-                <a href='linkedin.com/in/taylormdarnell/' class='link2 headerColor textResponsive'>linkedin.com/in/taylormdarnell/</a>
+                <a href='https://www.linkedin.com/in/taylormdarnell/' class='link2 headerColor textResponsive'>linkedin.com/in/taylormdarnell/</a>
                 </Grid>
                 </div>
             </Paper>
+            </div>
         </main>
       </div>
       
