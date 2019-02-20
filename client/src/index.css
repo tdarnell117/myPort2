@@ -251,7 +251,7 @@ div.item {
 
 @media only screen and (max-width: 600px) {
   .iconSize {
-    width: 55%;
+    width: auto;
     height: 9vh;
   }
 }
