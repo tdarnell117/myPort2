@@ -155,7 +155,7 @@ class ResponsiveDrawer extends React.Component {
           <Typography className={classes.margin}>
             <h3 class='headerColor link2'>Taylor Darnell</h3>
             <Grid container justify="center" alignItems="center">
-              <p class='text3'>Full-Stack Developer</p>
+              <p class='text3'>Front-End Web Developer</p>
             </Grid>
           </Typography>
         </Grid>
@@ -257,7 +257,7 @@ class ResponsiveDrawer extends React.Component {
                 <div class='row'>
                   <div class='col cardPadding'>
                     <p class='text textResponsive'>
-                      <b> Mission-driven full stack developer with a passion for thoughtful UI design,
+                      <b> Mission-driven front end developer with a passion for thoughtful UI design,
                 collaboration, and learning. </b>
                     </p>
                     <p class='text textResponsive'>
