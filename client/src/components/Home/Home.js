@@ -232,11 +232,11 @@ class ResponsiveDrawer extends React.Component {
             <div class='container-fluid'>
               <div class='col-sm-12'>
                 <div class='quote quoteText'>
-                  <span>I want to </span>
-                  <span class='teal'>&nbsp;make things </span>
+                  <span>Driven to leave an </span>
+                  <span class='teal'>&nbsp;Impact </span>
                   <br></br>
-                  <span>That </span>
-                  <span class='underline'>make a difference</span>.
+                  <span>on the world for </span>
+                  <span class='underline'>Future Generations</span>.
         </div>
               </div>
             </div>
@@ -263,7 +263,7 @@ class ResponsiveDrawer extends React.Component {
                     <p class='text textResponsive'>
                       I’ve always sought out opportunities and challenges that are meaningful to me.
                       Although my professional path has taken many twists and turns
-                       — from world traveling musician to executive account manager
+                       — from World Traveling Musician to Sr. Account Executive
                        — I've never stopped engaging my passion to help others and solve problems.
                  </p>
 
