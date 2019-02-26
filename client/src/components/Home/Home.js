@@ -233,7 +233,7 @@ class ResponsiveDrawer extends React.Component {
               <div class='col-sm-12'>
                 <div class='quote quoteText'>
                   <span>Driven to leave an </span>
-                  <span class='teal'>&nbsp;Impact </span>
+                  <span class='header'>&nbsp;Impact </span>
                   <br></br>
                   <span>on the world for </span>
                   <span class='underline'>Future Generations</span>.
@@ -287,58 +287,6 @@ class ResponsiveDrawer extends React.Component {
 
           <br></br>
 
-          {/* <Paper>
-            <div class="container-fluid header">
-                <Grid container justify="center" alignItems="center">
-                <Typography variant='h3' class='headerText headerSections' id='Experience'>Experience</Typography>
-                </Grid>
-                </div>
-            </Paper>
-            <br></br>
-
-            <Grid container justify="center" alignItems="center">
-          <Card className={classes.card}>
-        <img src='./images/uci3.jpg' alt='UCI' class='extraPadding uciImg' />
-        <hr></hr>
-        <CardActions className={classes.actions} disableActionSpacing>
-        <p class='text2'><b>University of California, Irvine</b></p>
-        <br></br> */}
-          {/* <Typography variant='p' >July 26th, 2018 - January 26th, 2019</Typography> */}
-          {/* <IconButton
-            className={classnames(classes.expand, {
-              [classes.expandOpen]: this.state.expanded,
-            })}
-            onClick={this.handleExpandClick}
-            aria-expanded={this.state.expanded}
-            aria-label="Show more"
-          >
-            <ExpandMoreIcon />
-          </IconButton>
-        </CardActions>
-        <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
-          <CardContent>
-            <p  class='text4 textResponsive'><b>Coding Boot Camp:</b></p>
-            <p class='text4 textResponsive'>
-              An intensive 24 week program where you learn the fundamentals of full-stack development.
-            </p>
-            <p class='text4 textResponsive'>
-            The Coding Boot Camp was designed to help students develop the skills and professional network needed to capitalize on the high demand web development career track.
-            </p>
-            <p class='text4 textResponsive'>
-            Gain practical web development experience and build a professional portfolio through a strategically engineered curriculum, centered around real-world projects.
-            </p>
-            <p class='text4 textResponsive'>
-            You will learn marketable skills such as HTML5, CSS3, JavaScript, jQuery, C#, ASP.Net, Bootstrap, React.js, Node.js, MongoDB, MySQL, and more.
-            </p>
-            <p class='text4 textResponsive'>
-            Benefit from dynamic, real-time classes taught by skilled instructors who know what it takes to succeed in the industry and
-            become employer competitive through various career services like technical interview training, portfolio reviews, resume support, 1:1 career coaching, and more.
-            </p>
-          </CardContent>
-        </Collapse>
-      </Card>
-      </Grid>
-       */}
           <Paper>
             <div class="container-fluid header">
               <Grid container justify="center" alignItems="center">
@@ -597,16 +545,16 @@ class ResponsiveDrawer extends React.Component {
               <div class="container cardPadding">
                 <div class='row'>
                   <div class='col-sm-4'>
-                    <img src='./images/uci3.jpg' alt='UCI' class='educationImg2 educationResponsive'></img>
+                    <img src='./images/uci3.jpg' alt='UCI' class='educationImg educationResponsive'></img>
                   </div>
                   <div class='col-sm-8'>
                     <p class='link headerResponsive'>
-                      <a href='https://uci.edu/' class='headerColor'> University of California,<br></br> Irvine</a>
+                      <a href='https://uci.edu/' class='headerColor link headerResponsive'> University of California,<br></br> Irvine</a>
                     </p>
                     <hr></hr>
                     <p class='text textResponsive2'>
                       July 26th, 2018 - January 26th, 2019
-                <ul>
+                    <ul>
                         <li>Certification</li>
                       </ul>
                     </p>
@@ -619,7 +567,7 @@ class ResponsiveDrawer extends React.Component {
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
                   <p class='text4 textResponsive'></p>
-                  <p class='text4 textResponsive'>
+                  <p class='text4 textResponsive3'>
                     An intensive 24 week program where you learn the fundamentals of full-stack development.
                     The Coding Boot Camp was designed to help students develop the skills and professional network needed to capitalize on the high demand web development career track.
               {/* Gain practical web development experience and build a professional portfolio through a strategically engineered curriculum, centered around real-world projects. */}
