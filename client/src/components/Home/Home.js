@@ -31,9 +31,6 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ExpansionPanel from '@material-ui/core/ExpansionPanel';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
-// import { HashLink as Link } from 'react-router-hash-link';
-
-
 import Button from '@material-ui/core/Button';
 
 const drawerWidth = 240;
@@ -196,7 +193,6 @@ class ResponsiveDrawer extends React.Component {
           </Toolbar>
         </AppBar>
         <nav className={classes.drawer}>
-          {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
           <Hidden smUp implementation="css">
             <Drawer
               container={this.props.container}
@@ -237,7 +233,7 @@ class ResponsiveDrawer extends React.Component {
                   <br></br>
                   <span>on the world for </span>
                   <span class='underline'>Future Generations</span>.
-        </div>
+                </div>
               </div>
             </div>
           </Paper>
@@ -570,10 +566,6 @@ class ResponsiveDrawer extends React.Component {
                   <p class='text4 textResponsive3'>
                     An intensive 24 week program where you learn the fundamentals of full-stack development.
                     The Coding Boot Camp was designed to help students develop the skills and professional network needed to capitalize on the high demand web development career track.
-              {/* Gain practical web development experience and build a professional portfolio through a strategically engineered curriculum, centered around real-world projects. */}
-                    {/* You will learn marketable skills such as HTML5, CSS3, JavaScript, jQuery, C#, ASP.Net, Bootstrap, React.js, Node.js, MongoDB, MySQL, and more.
-            Benefit from dynamic, real-time classes taught by skilled instructors who know what it takes to succeed in the industry and
-            become employer competitive through various career services like technical interview training, portfolio reviews, resume support, 1:1 career coaching, and more. */}
                   </p>
                 </ExpansionPanelDetails>
               </ExpansionPanel>
