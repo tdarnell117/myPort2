@@ -233,7 +233,7 @@ class ResponsiveDrawer extends React.Component {
                   <br></br>
                   <span>on the world for </span>
                   <span class='underline'>Future Generations</span>.
-                </div>
+              </div>
               </div>
             </div>
           </Paper>
