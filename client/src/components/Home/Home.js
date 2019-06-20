@@ -294,40 +294,37 @@ class ResponsiveDrawer extends React.Component {
 
 
           <div class='container'>
-            <Grid container justify="center" alignItems="center">
               <div class='row text-center'>
-                <div class='col-md cardPhone'>
+                <div class='col-sm cardPhone'>
                   <Card className={classes.card}>
-                    <CardImg className={classes.cardImg} src="./images/pokemonNewSize.png" alt="clickyGame" />
+                    <CardImg className={classes.cardImg} src="./images/overwatch.png" alt="overwatch" />
                     <CardContent>
-                      <h4><b>Clicky Game</b></h4>
-                      <p class='text4 textResponsive'>A game where you click different images until you click the same Pokemon twice.</p>
+                      <h4><b>Overwatch Comparison Guide</b></h4>
+                      <p class='text4 textResponsive'>This app allows you to select 2 of your favorite OverWatch Heroes and compare their abilities side by side.(not affiliated with Blizzard, for practice only)</p>
                     </CardContent>
                     <CardActions>
                       <Grid container justify="center" alignItems="center">
-                        <Button href='https://clickypokemongame.herokuapp.com/' size="small" color="primary" target='_blank'>View Online</Button>
-                        <Button href='https://github.com/tdarnell117/clickygame/tree/master/dec18' size="small" color="primary" target='_blank'>View Source</Button>
+                        <Button href='https://github.com/tdarnell117/OverwatchApp' size="small" color="primary" target='_blank'>View Source</Button>
                       </Grid>
                     </CardActions>
                   </Card>
                 </div>
-                <div class='col-md'>
+                <div class='col-sm'>
                   <Card className={classes.card}>
-                    <CardImg className={classes.cardImg} src='./images/bank2.png' alt="piggY" />
+                    <CardImg className={classes.cardImg} src='./images/squareenix.png' alt="squareenix" />
                     <CardContent>
-                      <h4><b>Piggy Bank</b></h4>
-                      <p class='text4 textResponsive'>Mobile-Focused web application where you can track and save your spendings.</p>
+                      <h4><b>Square Enix Main Page(recreated)</b></h4>
+                      <p class='text4 textResponsive'>This app was created to help me evolve my skills in building websites</p>
                     </CardContent>
                     <CardActions>
                       <Grid container justify="center" alignItems="center">
-                        <Button href='https://piggybudget.herokuapp.com/' size="small" color="primary" target='_blank'>View Online</Button>
-                        <Button href='https://github.com/kitlingmui/budgetapp' size="small" color="primary" target='_blank'>View Source</Button>
+                        <Button href='https://squareenixmainpage.herokuapp.com/' size="small" color="primary" target='_blank'>View Online</Button>
+                        <Button href='https://github.com/tdarnell117/GamesandMore' size="small" color="primary" target='_blank'>View Source</Button>
                       </Grid>
                     </CardActions>
                   </Card>
                 </div>
               </div>
-            </Grid>
           </div>
 
           <br></br>
